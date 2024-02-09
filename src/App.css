@@ -1,8 +1,38 @@
-/* 
-  Style your elements by creating CSS classes here.
-  Below, you can see an example of a class called "menu" that changes the color of the text to blue. Modify according to your needs.
-*/
+/* General body styling */
+body {
+  background-color: #f8f9fa; /* Light grey background */
+}
 
-.menu {
-  color: blue;
+/* Menu Item Card Styling */
+.menu-item-card {
+  border-radius: 10px; /* Rounded corners for cards */
+  overflow: hidden; /* Ensures images fit nicely in the card */
+}
+
+.menu-item-image {
+  width: 100px; /* Adjust based on your preference */
+  height: auto;
+  border-radius: 10%; /* Rounded corners */
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: #dde2e0;
+  color: #333; 
+  border-radius: 20px; /* Rounded edges */
+}
+
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+  .menu-item-card {
+    margin-bottom: 20px;
+  }
 }
