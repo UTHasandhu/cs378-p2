@@ -68,6 +68,12 @@ const menuItems = [
 function App() {
   return (
     <div className="container">
+      <div className="row">
+        <div className="col text-center">
+          <p className="tagline">Delicious, From-Scratch Recipes Close at Hand</p>
+          <p className="motto">The freshest choice at UT!</p>
+        </div>
+      </div>
       <h1 className="text-center my-4">Menu</h1>
       <div className="row">
         {menuItems.map(item => (
@@ -84,5 +90,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
