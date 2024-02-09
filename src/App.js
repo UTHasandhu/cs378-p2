@@ -68,16 +68,16 @@ const menuItems = [
 function App() {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col text-center">
-          <p className="tagline">Delicious, From-Scratch Recipes Close at Hand</p>
-          <p className="motto">The freshest choice at UT!</p>
-        </div>
+      <div className="text-center my-4">
+        <img src={`${process.env.PUBLIC_URL}/images/Cafe Delight.png`} alt="Cafe Logo" className="logo" />
+        <h1 className="title">Cafe Delight</h1>
+        <p className="tagline">Delicious, From-Scratch Recipes Close at Hand</p>
+        <p className="motto">The freshest choice at UT!</p>
       </div>
-      <h1 className="text-center my-4">Menu</h1>
+      <h2 className="text-center menu-header">Menu</h2>
       <div className="row">
         {menuItems.map(item => (
-          <div className="col-md-6" key={item.id}> {/* Responsive grid layout for menu items */}
+          <div className="col-md-6" key={item.id}>
             <MenuItem 
               title={item.title} 
               description={item.description} 
@@ -90,6 +90,7 @@ function App() {
     </div>
   );
 }
+
 
 
 export default App;
