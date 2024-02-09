@@ -67,14 +67,21 @@ const menuItems = [
 
 function App() {
   return (
-    <div className="container">
-      <div className="text-center my-4">
-        <img src={`${process.env.PUBLIC_URL}/images/Cafe Delight.png`} alt="Cafe Logo" className="logo" />
-        <h1 className="title">Cafe Delight</h1>
-        <p className="tagline">Delicious, From-Scratch Recipes Close at Hand</p>
-        <p className="motto">The freshest choice at UT!</p>
-      </div>
-      <h2 className="text-center menu-header">Menu</h2>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-4">
+            <img src={`${process.env.PUBLIC_URL}/images/Cafe Delight.png`} alt="Cafe Logo" className="logo "/>
+          </div>
+          <div className="col px-0">
+            <h1 className="title">Cafe Delight</h1>
+          </div>
+        </div>
+        <div className="row align-items-center">
+          <div className="col text-center">
+            <p className="tagline">Delicious, From-Scratch Recipes Close at Hand</p>
+            <p className="motto">The freshest choice at UT!</p>
+          </div>
+        </div>
       <div className="row">
         {menuItems.map(item => (
           <div className="col-md-6" key={item.id}>
